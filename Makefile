@@ -2,7 +2,8 @@
 JAVA_HOME ?= $(shell /usr/libexec/java_home -v 17 2>/dev/null || brew --prefix openjdk@17 2>/dev/null)
 export JAVA_HOME
 
-RUN = uv run
+# Commands run through uv by default; after `pip install -e ".[dev]"` use `make all RUN=`.
+RUN ?= uv run
 
 .PHONY: all download prepare quality analyze report test lint clean
 

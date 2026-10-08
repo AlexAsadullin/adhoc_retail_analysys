@@ -611,23 +611,23 @@
     "weeks": 102
   },
   "business": {
-    "total_revenue": 7464270.469995948,
+    "total_revenue": 7464270.469995961,
     "total_baskets": 254174,
     "active_households": 2493,
     "avg_weekly_revenue": 86793.84267441789,
     "avg_weekly_baskets": 2955.5116279069766,
     "avg_weekly_active_households": 1323.1162790697674,
-    "avg_basket_value": 29.366774217645972,
+    "avg_basket_value": 29.366774217646025,
     "trend_weeks": 13,
     "revenue_change_last_vs_first": 0.14960247514719627,
     "baskets_change_last_vs_first": -0.028680143918411782,
     "basket_value_change_last_vs_first": 0.18354676675180914,
     "active_households_change_last_vs_first": 0.018759188473978172,
-    "top3_department_share": 0.707536435238503,
+    "top3_department_share": 0.7075364352385056,
     "weekly": [
       {
         "week_no": 16,
-        "revenue": 79135.0099999993,
+        "revenue": 79135.0099999992,
         "baskets": 2829,
         "active_households": 1307,
         "avg_basket_value": 27.9727854365,
@@ -675,7 +675,7 @@
       },
       {
         "week_no": 22,
-        "revenue": 79133.8199999992,
+        "revenue": 79133.8199999991,
         "baskets": 3085,
         "active_households": 1311,
         "avg_basket_value": 25.6511572123,
@@ -699,7 +699,7 @@
       },
       {
         "week_no": 25,
-        "revenue": 88926.8199999993,
+        "revenue": 88926.8199999992,
         "baskets": 3079,
         "active_households": 1344,
         "avg_basket_value": 28.8817213381,
@@ -787,7 +787,7 @@
       },
       {
         "week_no": 36,
-        "revenue": 84083.8899999993,
+        "revenue": 84083.8899999992,
         "baskets": 3015,
         "active_households": 1325,
         "avg_basket_value": 27.8885207297,
@@ -1003,7 +1003,7 @@
       },
       {
         "week_no": 63,
-        "revenue": 92808.7599999992,
+        "revenue": 92808.7599999993,
         "baskets": 3096,
         "active_households": 1361,
         "avg_basket_value": 29.9769896641,
@@ -1019,7 +1019,7 @@
       },
       {
         "week_no": 65,
-        "revenue": 87396.4799999992,
+        "revenue": 87396.4799999993,
         "baskets": 3058,
         "active_households": 1343,
         "avg_basket_value": 28.5796206671,
@@ -1027,7 +1027,7 @@
       },
       {
         "week_no": 66,
-        "revenue": 77688.2599999994,
+        "revenue": 77688.2599999993,
         "baskets": 2957,
         "active_households": 1283,
         "avg_basket_value": 26.2726614812,
@@ -1059,7 +1059,7 @@
       },
       {
         "week_no": 70,
-        "revenue": 84986.9899999992,
+        "revenue": 84986.9899999993,
         "baskets": 2994,
         "active_households": 1314,
         "avg_basket_value": 28.3857682031,
@@ -1083,7 +1083,7 @@
       },
       {
         "week_no": 73,
-        "revenue": 87531.2599999991,
+        "revenue": 87531.2599999992,
         "baskets": 3043,
         "active_households": 1337,
         "avg_basket_value": 28.7647913244,
@@ -1147,7 +1147,7 @@
       },
       {
         "week_no": 81,
-        "revenue": 90167.9599999992,
+        "revenue": 90167.9599999993,
         "baskets": 2984,
         "active_households": 1347,
         "avg_basket_value": 30.2171447721,
@@ -1318,28 +1318,28 @@
       {
         "category_level": "department",
         "category": "GROCERY",
-        "revenue": 3785928.4199993135,
+        "revenue": 3785928.419999347,
         "revenue_share": 0.5072067572,
         "revenue_rank": 1
       },
       {
         "category_level": "department",
         "category": "DRUG GM",
-        "revenue": 975507.8700000737,
+        "revenue": 975507.8700000875,
         "revenue_share": 0.1306903165,
         "revenue_rank": 2
       },
       {
         "category_level": "department",
         "category": "KIOSK-GAS",
-        "revenue": 519807.0300000001,
+        "revenue": 519807.03,
         "revenue_share": 0.0696393616,
         "revenue_rank": 3
       },
       {
         "category_level": "department",
         "category": "PRODUCE",
-        "revenue": 514814.5199999909,
+        "revenue": 514814.5199999813,
         "revenue_share": 0.0689705072,
         "revenue_rank": 4
       },
@@ -1353,14 +1353,14 @@
       {
         "category_level": "department",
         "category": "MEAT-PCKGD",
-        "revenue": 378830.1200000012,
+        "revenue": 378830.1200000009,
         "revenue_share": 0.0507524642,
         "revenue_rank": 6
       },
       {
         "category_level": "department",
         "category": "DELI",
-        "revenue": 240340.8900000065,
+        "revenue": 240340.8900000076,
         "revenue_share": 0.0321988453,
         "revenue_rank": 7
       },
@@ -1374,14 +1374,14 @@
       {
         "category_level": "department",
         "category": "PASTRY",
-        "revenue": 112443.3899999985,
+        "revenue": 112443.3899999981,
         "revenue_share": 0.015064217,
         "revenue_rank": 9
       },
       {
         "category_level": "department",
         "category": "NUTRITION",
-        "revenue": 91119.6399999986,
+        "revenue": 91119.6399999987,
         "revenue_share": 0.0122074408,
         "revenue_rank": 10
       }
@@ -1390,21 +1390,21 @@
       {
         "category_level": "commodity",
         "category": "COUPON/MISC ITEMS",
-        "revenue": 610526.2899999995,
+        "revenue": 610526.2899999993,
         "revenue_share": 0.0817931628,
         "revenue_rank": 1
       },
       {
         "category_level": "commodity",
         "category": "SOFT DRINKS",
-        "revenue": 298593.5400000045,
+        "revenue": 298593.5400000017,
         "revenue_share": 0.040003044,
         "revenue_rank": 2
       },
       {
         "category_level": "commodity",
         "category": "BEEF",
-        "revenue": 286146.5400000014,
+        "revenue": 286146.540000001,
         "revenue_share": 0.0383354999,
         "revenue_rank": 3
       },
@@ -1418,42 +1418,42 @@
       {
         "category_level": "commodity",
         "category": "CHEESE",
-        "revenue": 175983.1699999996,
+        "revenue": 175983.1700000001,
         "revenue_share": 0.0235767408,
         "revenue_rank": 5
       },
       {
         "category_level": "commodity",
         "category": "FRZN MEAT/MEAT DINNERS",
-        "revenue": 148950.7800000002,
+        "revenue": 148950.7800000005,
         "revenue_share": 0.0199551692,
         "revenue_rank": 6
       },
       {
         "category_level": "commodity",
         "category": "BAG SNACKS",
-        "revenue": 136634.1899999971,
+        "revenue": 136634.1899999983,
         "revenue_share": 0.0183050963,
         "revenue_rank": 7
       },
       {
         "category_level": "commodity",
         "category": "FROZEN PIZZA",
-        "revenue": 135497.9699999995,
+        "revenue": 135497.9699999996,
         "revenue_share": 0.0181528752,
         "revenue_rank": 8
       },
       {
         "category_level": "commodity",
         "category": "BAKED BREAD/BUNS/ROLLS",
-        "revenue": 134777.5199999985,
+        "revenue": 134777.5199999998,
         "revenue_share": 0.0180563553,
         "revenue_rank": 9
       },
       {
         "category_level": "commodity",
         "category": "BEERS/ALES",
-        "revenue": 134314.9399999993,
+        "revenue": 134314.9400000006,
         "revenue_share": 0.0179943828,
         "revenue_rank": 10
       }
@@ -1753,7 +1753,7 @@
       }
     ],
     "basket_value_comparison": {
-      "churning_median": 28.35800136798906,
+      "churning_median": 28.358001367989065,
       "stable_median": 40.06865771812083,
       "p_value": 1.5481268879111016e-05
     },
