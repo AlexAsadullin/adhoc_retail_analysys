@@ -1,0 +1,118 @@
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  sql_dir: sql
+  prepare_stats_file: data/processed/prepare_stats.json
+  quality_file: data/processed/quality.json
+  figures_dir: reports/figures
+  results_file: reports/results.json
+
+source:
+  # Mendeley Data mirror of dunnhumby "The Complete Journey", CC BY 4.0.
+  name: dunnhumby The Complete Journey (Mendeley Data, CC BY 4.0)
+  url: https://doi.org/10.17632/7myy93ym6k.1
+  files:
+    transaction_data:
+      url: https://data.mendeley.com/public-files/datasets/7myy93ym6k/files/56fecf21-e014-4a31-9b04-7aebc8d6ba76/file_downloaded
+      sha256: 3a685c0729cef664d634486189f774518b84f53cde7cbf701a5963238692b476
+    product:
+      url: https://data.mendeley.com/public-files/datasets/7myy93ym6k/files/52063d43-3204-4886-b83c-e8284ebf3b98/file_downloaded
+      sha256: 7ecbcec41e0f1e5a51b43a359965cc50dc5586a2b900a378b64032750fedc949
+    hh_demographic:
+      url: https://data.mendeley.com/public-files/datasets/7myy93ym6k/files/edf723de-c67e-4ae3-8d91-2fccd24afd5b/file_downloaded
+      sha256: 3764c70d5e38b5da1206ab6d60788236d2b2e31ae3168f6382ed5880a0101123
+    causal_data:
+      url: https://data.mendeley.com/public-files/datasets/7myy93ym6k/files/6808ee50-b73a-4758-865e-ba38ccd44589/file_downloaded
+      sha256: 60ed7021fefc209c0caf36fcf95d1e93693775acfdac01fc9ee38273da88937a
+
+prepare:
+  spark_driver_memory: 6g
+  # Mailer code meaning "not in the mailer"; any other code counts as a placement.
+  mailer_absent_code: "0"
+  display_absent_code: "0"
+
+quality:
+  key_columns:
+    transaction_data: [household_key, basket_id, day, product_id, quantity, sales_value, store_id, week_no]
+    product: [product_id]
+    hh_demographic: [household_key]
+    causal_data: [product_id, store_id, week_no, display, mailer]
+  # Category fields required for every product that appears in transactions.
+  hierarchy_columns: [department, commodity_desc, sub_commodity_desc]
+  min_week: 1
+  max_week: 102
+  # Analysis starts at the first week from which weekly active households stay at or above
+  # this share of the median weekly active households.
+  stable_activity_ratio: 0.9
+  # A week is complete if it contains this many distinct days; trailing incomplete weeks are cut.
+  full_week_days: 7
+
+analysis:
+  top_categories: 10
+  # Revenue trend compares the last and the first weeks of the window, this many each.
+  trend_weeks: 13
+
+rfm:
+  score_buckets: 5
+  # Revenue concentration is reported for this top share of households.
+  top_customers_share: 0.2
+  # Rules are checked top to bottom; a household gets the first segment whose score ranges match.
+  segments:
+    - name: Чемпионы
+      recency: [4, 5]
+      frequency: [4, 5]
+      monetary: [4, 5]
+    - name: Лояльные
+      recency: [3, 5]
+      frequency: [3, 5]
+      monetary: [1, 5]
+    - name: Перспективные
+      recency: [4, 5]
+      frequency: [1, 2]
+      monetary: [1, 5]
+    - name: Под угрозой ухода
+      recency: [1, 2]
+      frequency: [3, 5]
+      monetary: [1, 5]
+    - name: Спящие
+      recency: [1, 2]
+      frequency: [1, 2]
+      monetary: [1, 5]
+    - name: Середняки
+      recency: [1, 5]
+      frequency: [1, 5]
+      monetary: [1, 5]
+
+cohorts:
+  period_weeks: 4
+  # Cohorts with fewer households are too small for a stable retention estimate.
+  min_cohort_size: 50
+  # Periods since the first purchase reported in the summary (3 periods = 12 weeks, 13 = a year).
+  report_periods: [1, 3, 13]
+
+churning_loyal:
+  # Loyal = top share of households by revenue in the first half of the analysis window.
+  loyal_top_share: 0.2
+  # Churning = baskets in the last `recent_weeks` fell by more than `activity_drop`
+  # versus the household's own average over earlier blocks of the same length.
+  recent_weeks: 12
+  activity_drop: 0.5
+  top_departments: 8
+  # Significance level for group comparisons.
+  alpha: 0.05
+  # Chi-square results count only if every expected cell count reaches this value.
+  min_expected_count: 5
+
+promo:
+  pre_weeks: 4
+  # Product-week is treated if at least this share of stores put it in the mailer.
+  treated_min_store_share: 0.5
+  # Products must sell in this many pre-period weeks to be in the sample (availability filter).
+  min_pre_weeks_with_sales: 4
+  # Departments where QUANTITY is not an item count (fuel, misc transactions).
+  excluded_departments: [KIOSK-GAS, MISC SALES TRAN]
+  confidence_level: 0.95
+
+plots:
+  dpi: 150
+  palette: ["#1f4e79", "#e07b39", "#5b9bd5", "#70ad47", "#a5a5a5", "#c00000"]

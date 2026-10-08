@@ -1,0 +1,2048 @@
+{
+  "data": {
+    "source": "dunnhumby The Complete Journey (Mendeley Data, CC BY 4.0)",
+    "source_url": "https://doi.org/10.17632/7myy93ym6k.1",
+    "tables": {
+      "transaction_data": {
+        "rows_raw": 2595732,
+        "duplicates_removed": 0,
+        "zero_quantity_removed": 14466,
+        "non_positive_sales_removed": 4451,
+        "rows_clean": 2576815
+      },
+      "product": {
+        "rows_raw": 92353,
+        "duplicates_removed": 0,
+        "rows_clean": 92353
+      },
+      "hh_demographic": {
+        "rows_raw": 801,
+        "duplicates_removed": 0,
+        "rows_clean": 801
+      },
+      "causal_data": {
+        "rows_raw": 36786524,
+        "duplicates_removed": 0,
+        "rows_clean": 36786524
+      }
+    },
+    "removed_transaction_share": 0.007287732323675942,
+    "quality_checks": [
+      {
+        "name": "no_nulls_transaction_data",
+        "passed": true,
+        "critical": true,
+        "details": "no nulls in household_key, basket_id, day, product_id, quantity, sales_value, store_id, week_no"
+      },
+      {
+        "name": "no_nulls_product",
+        "passed": true,
+        "critical": true,
+        "details": "no nulls in product_id"
+      },
+      {
+        "name": "no_nulls_hh_demographic",
+        "passed": true,
+        "critical": true,
+        "details": "no nulls in household_key"
+      },
+      {
+        "name": "no_nulls_causal_data",
+        "passed": true,
+        "critical": true,
+        "details": "no nulls in product_id, store_id, week_no, display, mailer"
+      },
+      {
+        "name": "products_in_reference",
+        "passed": true,
+        "critical": true,
+        "details": "0 product_id values from transactions are missing in product"
+      },
+      {
+        "name": "product_hierarchy_sold",
+        "passed": true,
+        "critical": true,
+        "details": "0 sold products without department, commodity_desc, sub_commodity_desc"
+      },
+      {
+        "name": "product_hierarchy_reference",
+        "passed": false,
+        "critical": false,
+        "details": "15 reference products without department, commodity_desc, sub_commodity_desc"
+      },
+      {
+        "name": "week_range_transaction_data",
+        "passed": true,
+        "critical": true,
+        "details": "observed weeks 1-102, allowed 1-102"
+      },
+      {
+        "name": "week_range_causal_data",
+        "passed": true,
+        "critical": true,
+        "details": "observed weeks 9-101, allowed 1-102"
+      }
+    ],
+    "analysis_window": {
+      "start_week": 16,
+      "end_week": 101,
+      "active_households_threshold": 1179.45
+    },
+    "weekly_activity": [
+      {
+        "week_no": 1,
+        "active_households": 87,
+        "days": 5
+      },
+      {
+        "week_no": 2,
+        "active_households": 175,
+        "days": 7
+      },
+      {
+        "week_no": 3,
+        "active_households": 228,
+        "days": 7
+      },
+      {
+        "week_no": 4,
+        "active_households": 270,
+        "days": 7
+      },
+      {
+        "week_no": 5,
+        "active_households": 369,
+        "days": 7
+      },
+      {
+        "week_no": 6,
+        "active_households": 431,
+        "days": 7
+      },
+      {
+        "week_no": 7,
+        "active_households": 489,
+        "days": 7
+      },
+      {
+        "week_no": 8,
+        "active_households": 530,
+        "days": 7
+      },
+      {
+        "week_no": 9,
+        "active_households": 619,
+        "days": 7
+      },
+      {
+        "week_no": 10,
+        "active_households": 706,
+        "days": 7
+      },
+      {
+        "week_no": 11,
+        "active_households": 845,
+        "days": 7
+      },
+      {
+        "week_no": 12,
+        "active_households": 903,
+        "days": 7
+      },
+      {
+        "week_no": 13,
+        "active_households": 970,
+        "days": 7
+      },
+      {
+        "week_no": 14,
+        "active_households": 1118,
+        "days": 7
+      },
+      {
+        "week_no": 15,
+        "active_households": 1154,
+        "days": 7
+      },
+      {
+        "week_no": 16,
+        "active_households": 1307,
+        "days": 7
+      },
+      {
+        "week_no": 17,
+        "active_households": 1366,
+        "days": 7
+      },
+      {
+        "week_no": 18,
+        "active_households": 1310,
+        "days": 7
+      },
+      {
+        "week_no": 19,
+        "active_households": 1265,
+        "days": 7
+      },
+      {
+        "week_no": 20,
+        "active_households": 1318,
+        "days": 7
+      },
+      {
+        "week_no": 21,
+        "active_households": 1310,
+        "days": 7
+      },
+      {
+        "week_no": 22,
+        "active_households": 1311,
+        "days": 7
+      },
+      {
+        "week_no": 23,
+        "active_households": 1289,
+        "days": 7
+      },
+      {
+        "week_no": 24,
+        "active_households": 1333,
+        "days": 7
+      },
+      {
+        "week_no": 25,
+        "active_households": 1344,
+        "days": 7
+      },
+      {
+        "week_no": 26,
+        "active_households": 1301,
+        "days": 7
+      },
+      {
+        "week_no": 27,
+        "active_households": 1265,
+        "days": 7
+      },
+      {
+        "week_no": 28,
+        "active_households": 1286,
+        "days": 7
+      },
+      {
+        "week_no": 29,
+        "active_households": 1328,
+        "days": 7
+      },
+      {
+        "week_no": 30,
+        "active_households": 1283,
+        "days": 7
+      },
+      {
+        "week_no": 31,
+        "active_households": 1278,
+        "days": 7
+      },
+      {
+        "week_no": 32,
+        "active_households": 1280,
+        "days": 7
+      },
+      {
+        "week_no": 33,
+        "active_households": 1305,
+        "days": 7
+      },
+      {
+        "week_no": 34,
+        "active_households": 1291,
+        "days": 7
+      },
+      {
+        "week_no": 35,
+        "active_households": 1262,
+        "days": 7
+      },
+      {
+        "week_no": 36,
+        "active_households": 1325,
+        "days": 7
+      },
+      {
+        "week_no": 37,
+        "active_households": 1316,
+        "days": 7
+      },
+      {
+        "week_no": 38,
+        "active_households": 1284,
+        "days": 7
+      },
+      {
+        "week_no": 39,
+        "active_households": 1294,
+        "days": 7
+      },
+      {
+        "week_no": 40,
+        "active_households": 1277,
+        "days": 7
+      },
+      {
+        "week_no": 41,
+        "active_households": 1307,
+        "days": 7
+      },
+      {
+        "week_no": 42,
+        "active_households": 1318,
+        "days": 7
+      },
+      {
+        "week_no": 43,
+        "active_households": 1288,
+        "days": 7
+      },
+      {
+        "week_no": 44,
+        "active_households": 1317,
+        "days": 7
+      },
+      {
+        "week_no": 45,
+        "active_households": 1289,
+        "days": 7
+      },
+      {
+        "week_no": 46,
+        "active_households": 1334,
+        "days": 7
+      },
+      {
+        "week_no": 47,
+        "active_households": 1285,
+        "days": 7
+      },
+      {
+        "week_no": 48,
+        "active_households": 1300,
+        "days": 7
+      },
+      {
+        "week_no": 49,
+        "active_households": 1304,
+        "days": 7
+      },
+      {
+        "week_no": 50,
+        "active_households": 1331,
+        "days": 7
+      },
+      {
+        "week_no": 51,
+        "active_households": 1302,
+        "days": 7
+      },
+      {
+        "week_no": 52,
+        "active_households": 1299,
+        "days": 7
+      },
+      {
+        "week_no": 53,
+        "active_households": 1288,
+        "days": 7
+      },
+      {
+        "week_no": 54,
+        "active_households": 1313,
+        "days": 7
+      },
+      {
+        "week_no": 55,
+        "active_households": 1334,
+        "days": 7
+      },
+      {
+        "week_no": 56,
+        "active_households": 1334,
+        "days": 7
+      },
+      {
+        "week_no": 57,
+        "active_households": 1291,
+        "days": 7
+      },
+      {
+        "week_no": 58,
+        "active_households": 1284,
+        "days": 7
+      },
+      {
+        "week_no": 59,
+        "active_households": 1391,
+        "days": 7
+      },
+      {
+        "week_no": 60,
+        "active_households": 1386,
+        "days": 7
+      },
+      {
+        "week_no": 61,
+        "active_households": 1391,
+        "days": 7
+      },
+      {
+        "week_no": 62,
+        "active_households": 1362,
+        "days": 7
+      },
+      {
+        "week_no": 63,
+        "active_households": 1361,
+        "days": 7
+      },
+      {
+        "week_no": 64,
+        "active_households": 1335,
+        "days": 7
+      },
+      {
+        "week_no": 65,
+        "active_households": 1343,
+        "days": 7
+      },
+      {
+        "week_no": 66,
+        "active_households": 1283,
+        "days": 7
+      },
+      {
+        "week_no": 67,
+        "active_households": 1335,
+        "days": 7
+      },
+      {
+        "week_no": 68,
+        "active_households": 1410,
+        "days": 7
+      },
+      {
+        "week_no": 69,
+        "active_households": 1318,
+        "days": 7
+      },
+      {
+        "week_no": 70,
+        "active_households": 1314,
+        "days": 7
+      },
+      {
+        "week_no": 71,
+        "active_households": 1337,
+        "days": 7
+      },
+      {
+        "week_no": 72,
+        "active_households": 1406,
+        "days": 7
+      },
+      {
+        "week_no": 73,
+        "active_households": 1337,
+        "days": 7
+      },
+      {
+        "week_no": 74,
+        "active_households": 1307,
+        "days": 7
+      },
+      {
+        "week_no": 75,
+        "active_households": 1327,
+        "days": 7
+      },
+      {
+        "week_no": 76,
+        "active_households": 1332,
+        "days": 7
+      },
+      {
+        "week_no": 77,
+        "active_households": 1354,
+        "days": 7
+      },
+      {
+        "week_no": 78,
+        "active_households": 1293,
+        "days": 7
+      },
+      {
+        "week_no": 79,
+        "active_households": 1365,
+        "days": 7
+      },
+      {
+        "week_no": 80,
+        "active_households": 1324,
+        "days": 7
+      },
+      {
+        "week_no": 81,
+        "active_households": 1347,
+        "days": 7
+      },
+      {
+        "week_no": 82,
+        "active_households": 1359,
+        "days": 7
+      },
+      {
+        "week_no": 83,
+        "active_households": 1343,
+        "days": 7
+      },
+      {
+        "week_no": 84,
+        "active_households": 1293,
+        "days": 7
+      },
+      {
+        "week_no": 85,
+        "active_households": 1398,
+        "days": 7
+      },
+      {
+        "week_no": 86,
+        "active_households": 1341,
+        "days": 7
+      },
+      {
+        "week_no": 87,
+        "active_households": 1354,
+        "days": 7
+      },
+      {
+        "week_no": 88,
+        "active_households": 1372,
+        "days": 7
+      },
+      {
+        "week_no": 89,
+        "active_households": 1328,
+        "days": 7
+      },
+      {
+        "week_no": 90,
+        "active_households": 1356,
+        "days": 7
+      },
+      {
+        "week_no": 91,
+        "active_households": 1341,
+        "days": 7
+      },
+      {
+        "week_no": 92,
+        "active_households": 1428,
+        "days": 7
+      },
+      {
+        "week_no": 93,
+        "active_households": 1242,
+        "days": 7
+      },
+      {
+        "week_no": 94,
+        "active_households": 1363,
+        "days": 7
+      },
+      {
+        "week_no": 95,
+        "active_households": 1335,
+        "days": 7
+      },
+      {
+        "week_no": 96,
+        "active_households": 1309,
+        "days": 7
+      },
+      {
+        "week_no": 97,
+        "active_households": 1332,
+        "days": 7
+      },
+      {
+        "week_no": 98,
+        "active_households": 1384,
+        "days": 7
+      },
+      {
+        "week_no": 99,
+        "active_households": 1324,
+        "days": 7
+      },
+      {
+        "week_no": 100,
+        "active_households": 1313,
+        "days": 7
+      },
+      {
+        "week_no": 101,
+        "active_households": 1269,
+        "days": 7
+      },
+      {
+        "week_no": 102,
+        "active_households": 1205,
+        "days": 6
+      }
+    ],
+    "stable_activity_ratio": 0.9,
+    "figures": {
+      "analysis_window": "reports/figures/analysis_window.png"
+    },
+    "households": 2500,
+    "baskets": 275539,
+    "products": 91905,
+    "stores": 581,
+    "weeks": 102
+  },
+  "business": {
+    "total_revenue": 7464270.469995948,
+    "total_baskets": 254174,
+    "active_households": 2493,
+    "avg_weekly_revenue": 86793.84267441789,
+    "avg_weekly_baskets": 2955.5116279069766,
+    "avg_weekly_active_households": 1323.1162790697674,
+    "avg_basket_value": 29.366774217645972,
+    "trend_weeks": 13,
+    "revenue_change_last_vs_first": 0.14960247514719627,
+    "baskets_change_last_vs_first": -0.028680143918411782,
+    "basket_value_change_last_vs_first": 0.18354676675180914,
+    "active_households_change_last_vs_first": 0.018759188473978172,
+    "top3_department_share": 0.707536435238503,
+    "weekly": [
+      {
+        "week_no": 16,
+        "revenue": 79135.0099999993,
+        "baskets": 2829,
+        "active_households": 1307,
+        "avg_basket_value": 27.9727854365,
+        "revenue_wow_change": null
+      },
+      {
+        "week_no": 17,
+        "revenue": 79556.3499999991,
+        "baskets": 3040,
+        "active_households": 1366,
+        "avg_basket_value": 26.1698519737,
+        "revenue_wow_change": 0.0053243185
+      },
+      {
+        "week_no": 18,
+        "revenue": 75968.1799999993,
+        "baskets": 3064,
+        "active_households": 1310,
+        "avg_basket_value": 24.7937924282,
+        "revenue_wow_change": -0.0451022451
+      },
+      {
+        "week_no": 19,
+        "revenue": 72536.8799999993,
+        "baskets": 2961,
+        "active_households": 1265,
+        "avg_basket_value": 24.4974265451,
+        "revenue_wow_change": -0.0451675952
+      },
+      {
+        "week_no": 20,
+        "revenue": 86108.8999999993,
+        "baskets": 3078,
+        "active_households": 1318,
+        "avg_basket_value": 27.9756010396,
+        "revenue_wow_change": 0.1871050974
+      },
+      {
+        "week_no": 21,
+        "revenue": 83262.3299999992,
+        "baskets": 2986,
+        "active_households": 1310,
+        "avg_basket_value": 27.8842364367,
+        "revenue_wow_change": -0.0330577908
+      },
+      {
+        "week_no": 22,
+        "revenue": 79133.8199999992,
+        "baskets": 3085,
+        "active_households": 1311,
+        "avg_basket_value": 25.6511572123,
+        "revenue_wow_change": -0.0495843679
+      },
+      {
+        "week_no": 23,
+        "revenue": 76069.3499999993,
+        "baskets": 2939,
+        "active_households": 1289,
+        "avg_basket_value": 25.8827322218,
+        "revenue_wow_change": -0.038725162
+      },
+      {
+        "week_no": 24,
+        "revenue": 88706.0999999992,
+        "baskets": 3094,
+        "active_households": 1333,
+        "avg_basket_value": 28.6703619909,
+        "revenue_wow_change": 0.1661214405
+      },
+      {
+        "week_no": 25,
+        "revenue": 88926.8199999993,
+        "baskets": 3079,
+        "active_households": 1344,
+        "avg_basket_value": 28.8817213381,
+        "revenue_wow_change": 0.0024882167
+      },
+      {
+        "week_no": 26,
+        "revenue": 79208.9199999993,
+        "baskets": 2882,
+        "active_households": 1301,
+        "avg_basket_value": 27.4840111034,
+        "revenue_wow_change": -0.1092797426
+      },
+      {
+        "week_no": 27,
+        "revenue": 79909.0699999992,
+        "baskets": 2826,
+        "active_households": 1265,
+        "avg_basket_value": 28.2763871196,
+        "revenue_wow_change": 0.0088392822
+      },
+      {
+        "week_no": 28,
+        "revenue": 78556.1999999993,
+        "baskets": 2770,
+        "active_households": 1286,
+        "avg_basket_value": 28.3596389892,
+        "revenue_wow_change": -0.0169301182
+      },
+      {
+        "week_no": 29,
+        "revenue": 89026.9799999995,
+        "baskets": 2987,
+        "active_households": 1328,
+        "avg_basket_value": 29.8048141948,
+        "revenue_wow_change": 0.1332903068
+      },
+      {
+        "week_no": 30,
+        "revenue": 80131.8499999993,
+        "baskets": 2886,
+        "active_households": 1283,
+        "avg_basket_value": 27.7657137907,
+        "revenue_wow_change": -0.0999149921
+      },
+      {
+        "week_no": 31,
+        "revenue": 77643.8799999993,
+        "baskets": 2811,
+        "active_households": 1278,
+        "avg_basket_value": 27.6214443259,
+        "revenue_wow_change": -0.0310484533
+      },
+      {
+        "week_no": 32,
+        "revenue": 76723.9499999992,
+        "baskets": 2907,
+        "active_households": 1280,
+        "avg_basket_value": 26.3928276574,
+        "revenue_wow_change": -0.0118480684
+      },
+      {
+        "week_no": 33,
+        "revenue": 85796.4699999993,
+        "baskets": 2934,
+        "active_households": 1305,
+        "avg_basket_value": 29.2421506476,
+        "revenue_wow_change": 0.1182488649
+      },
+      {
+        "week_no": 34,
+        "revenue": 81676.1299999992,
+        "baskets": 2865,
+        "active_households": 1291,
+        "avg_basket_value": 28.5082478185,
+        "revenue_wow_change": -0.0480245866
+      },
+      {
+        "week_no": 35,
+        "revenue": 82983.8299999992,
+        "baskets": 2773,
+        "active_households": 1262,
+        "avg_basket_value": 29.9256509196,
+        "revenue_wow_change": 0.0160107978
+      },
+      {
+        "week_no": 36,
+        "revenue": 84083.8899999993,
+        "baskets": 3015,
+        "active_households": 1325,
+        "avg_basket_value": 27.8885207297,
+        "revenue_wow_change": 0.0132563175
+      },
+      {
+        "week_no": 37,
+        "revenue": 87324.2499999993,
+        "baskets": 2951,
+        "active_households": 1316,
+        "avg_basket_value": 29.5914096916,
+        "revenue_wow_change": 0.0385372275
+      },
+      {
+        "week_no": 38,
+        "revenue": 90906.2099999992,
+        "baskets": 2887,
+        "active_households": 1284,
+        "avg_basket_value": 31.4881226186,
+        "revenue_wow_change": 0.0410190755
+      },
+      {
+        "week_no": 39,
+        "revenue": 82427.4399999993,
+        "baskets": 2869,
+        "active_households": 1294,
+        "avg_basket_value": 28.7303729522,
+        "revenue_wow_change": -0.0932694257
+      },
+      {
+        "week_no": 40,
+        "revenue": 89984.7599999991,
+        "baskets": 2778,
+        "active_households": 1277,
+        "avg_basket_value": 32.3919222462,
+        "revenue_wow_change": 0.0916845167
+      },
+      {
+        "week_no": 41,
+        "revenue": 83638.5799999991,
+        "baskets": 2970,
+        "active_households": 1307,
+        "avg_basket_value": 28.1611380471,
+        "revenue_wow_change": -0.0705250534
+      },
+      {
+        "week_no": 42,
+        "revenue": 93370.2899999993,
+        "baskets": 2911,
+        "active_households": 1318,
+        "avg_basket_value": 32.0749879766,
+        "revenue_wow_change": 0.1163543188
+      },
+      {
+        "week_no": 43,
+        "revenue": 83953.8699999994,
+        "baskets": 2835,
+        "active_households": 1288,
+        "avg_basket_value": 29.6133580247,
+        "revenue_wow_change": -0.1008502812
+      },
+      {
+        "week_no": 44,
+        "revenue": 83093.3199999994,
+        "baskets": 2991,
+        "active_households": 1317,
+        "avg_basket_value": 27.7811166834,
+        "revenue_wow_change": -0.010250272
+      },
+      {
+        "week_no": 45,
+        "revenue": 79682.3099999993,
+        "baskets": 2852,
+        "active_households": 1289,
+        "avg_basket_value": 27.939098878,
+        "revenue_wow_change": -0.0410503516
+      },
+      {
+        "week_no": 46,
+        "revenue": 95878.0799999993,
+        "baskets": 3076,
+        "active_households": 1334,
+        "avg_basket_value": 31.1697269181,
+        "revenue_wow_change": 0.2032542731
+      },
+      {
+        "week_no": 47,
+        "revenue": 89835.4599999994,
+        "baskets": 2919,
+        "active_households": 1285,
+        "avg_basket_value": 30.7761082563,
+        "revenue_wow_change": -0.0630239988
+      },
+      {
+        "week_no": 48,
+        "revenue": 80300.2799999992,
+        "baskets": 2864,
+        "active_households": 1300,
+        "avg_basket_value": 28.0378072626,
+        "revenue_wow_change": -0.1061404929
+      },
+      {
+        "week_no": 49,
+        "revenue": 85805.4999999993,
+        "baskets": 2937,
+        "active_households": 1304,
+        "avg_basket_value": 29.2153558052,
+        "revenue_wow_change": 0.0685579179
+      },
+      {
+        "week_no": 50,
+        "revenue": 90219.6699999994,
+        "baskets": 2926,
+        "active_households": 1331,
+        "avg_basket_value": 30.8337901572,
+        "revenue_wow_change": 0.0514439051
+      },
+      {
+        "week_no": 51,
+        "revenue": 85529.5199999993,
+        "baskets": 2972,
+        "active_households": 1302,
+        "avg_basket_value": 28.7784387618,
+        "revenue_wow_change": -0.0519858918
+      },
+      {
+        "week_no": 52,
+        "revenue": 84886.4899999993,
+        "baskets": 2928,
+        "active_households": 1299,
+        "avg_basket_value": 28.9912875683,
+        "revenue_wow_change": -0.0075182229
+      },
+      {
+        "week_no": 53,
+        "revenue": 83239.7499999993,
+        "baskets": 2857,
+        "active_households": 1288,
+        "avg_basket_value": 29.1353692685,
+        "revenue_wow_change": -0.0193993178
+      },
+      {
+        "week_no": 54,
+        "revenue": 87914.8899999993,
+        "baskets": 2923,
+        "active_households": 1313,
+        "avg_basket_value": 30.0769380773,
+        "revenue_wow_change": 0.056164753
+      },
+      {
+        "week_no": 55,
+        "revenue": 87062.4799999992,
+        "baskets": 3002,
+        "active_households": 1334,
+        "avg_basket_value": 29.0014923384,
+        "revenue_wow_change": -0.0096958547
+      },
+      {
+        "week_no": 56,
+        "revenue": 89058.0399999994,
+        "baskets": 2956,
+        "active_households": 1334,
+        "avg_basket_value": 30.1278890392,
+        "revenue_wow_change": 0.0229210103
+      },
+      {
+        "week_no": 57,
+        "revenue": 82604.8999999994,
+        "baskets": 2951,
+        "active_households": 1291,
+        "avg_basket_value": 27.992172145,
+        "revenue_wow_change": -0.0724599374
+      },
+      {
+        "week_no": 58,
+        "revenue": 83694.6899999993,
+        "baskets": 2843,
+        "active_households": 1284,
+        "avg_basket_value": 29.4388638762,
+        "revenue_wow_change": 0.0131928009
+      },
+      {
+        "week_no": 59,
+        "revenue": 96701.2099999993,
+        "baskets": 3076,
+        "active_households": 1391,
+        "avg_basket_value": 31.4373244473,
+        "revenue_wow_change": 0.1554043632
+      },
+      {
+        "week_no": 60,
+        "revenue": 90986.9899999993,
+        "baskets": 3130,
+        "active_households": 1386,
+        "avg_basket_value": 29.0693258786,
+        "revenue_wow_change": -0.0590915046
+      },
+      {
+        "week_no": 61,
+        "revenue": 90584.8399999993,
+        "baskets": 3141,
+        "active_households": 1391,
+        "avg_basket_value": 28.8394906081,
+        "revenue_wow_change": -0.0044198627
+      },
+      {
+        "week_no": 62,
+        "revenue": 88181.8099999995,
+        "baskets": 3040,
+        "active_households": 1362,
+        "avg_basket_value": 29.0071743421,
+        "revenue_wow_change": -0.0265279488
+      },
+      {
+        "week_no": 63,
+        "revenue": 92808.7599999992,
+        "baskets": 3096,
+        "active_households": 1361,
+        "avg_basket_value": 29.9769896641,
+        "revenue_wow_change": 0.0524705719
+      },
+      {
+        "week_no": 64,
+        "revenue": 91181.8999999993,
+        "baskets": 3033,
+        "active_households": 1335,
+        "avg_basket_value": 30.0632706891,
+        "revenue_wow_change": -0.0175291643
+      },
+      {
+        "week_no": 65,
+        "revenue": 87396.4799999992,
+        "baskets": 3058,
+        "active_households": 1343,
+        "avg_basket_value": 28.5796206671,
+        "revenue_wow_change": -0.0415150375
+      },
+      {
+        "week_no": 66,
+        "revenue": 77688.2599999994,
+        "baskets": 2957,
+        "active_households": 1283,
+        "avg_basket_value": 26.2726614812,
+        "revenue_wow_change": -0.1110825058
+      },
+      {
+        "week_no": 67,
+        "revenue": 90950.7299999993,
+        "baskets": 3072,
+        "active_households": 1335,
+        "avg_basket_value": 29.6063574219,
+        "revenue_wow_change": 0.1707139534
+      },
+      {
+        "week_no": 68,
+        "revenue": 97966.5599999993,
+        "baskets": 3281,
+        "active_households": 1410,
+        "avg_basket_value": 29.858750381,
+        "revenue_wow_change": 0.0771387981
+      },
+      {
+        "week_no": 69,
+        "revenue": 86409.8999999992,
+        "baskets": 3028,
+        "active_households": 1318,
+        "avg_basket_value": 28.5369550859,
+        "revenue_wow_change": -0.1179653547
+      },
+      {
+        "week_no": 70,
+        "revenue": 84986.9899999992,
+        "baskets": 2994,
+        "active_households": 1314,
+        "avg_basket_value": 28.3857682031,
+        "revenue_wow_change": -0.0164669789
+      },
+      {
+        "week_no": 71,
+        "revenue": 83869.6999999992,
+        "baskets": 2987,
+        "active_households": 1337,
+        "avg_basket_value": 28.0782390358,
+        "revenue_wow_change": -0.0131466004
+      },
+      {
+        "week_no": 72,
+        "revenue": 96930.4699999994,
+        "baskets": 3198,
+        "active_households": 1406,
+        "avg_basket_value": 30.3097154472,
+        "revenue_wow_change": 0.1557269193
+      },
+      {
+        "week_no": 73,
+        "revenue": 87531.2599999991,
+        "baskets": 3043,
+        "active_households": 1337,
+        "avg_basket_value": 28.7647913244,
+        "revenue_wow_change": -0.0969685796
+      },
+      {
+        "week_no": 74,
+        "revenue": 85641.3099999993,
+        "baskets": 2986,
+        "active_households": 1307,
+        "avg_basket_value": 28.6809477562,
+        "revenue_wow_change": -0.0215917148
+      },
+      {
+        "week_no": 75,
+        "revenue": 83162.4199999993,
+        "baskets": 2963,
+        "active_households": 1327,
+        "avg_basket_value": 28.0669659129,
+        "revenue_wow_change": -0.0289450266
+      },
+      {
+        "week_no": 76,
+        "revenue": 88851.3999999994,
+        "baskets": 2965,
+        "active_households": 1332,
+        "avg_basket_value": 29.9667453626,
+        "revenue_wow_change": 0.0684080622
+      },
+      {
+        "week_no": 77,
+        "revenue": 92161.4199999992,
+        "baskets": 2996,
+        "active_households": 1354,
+        "avg_basket_value": 30.7614886515,
+        "revenue_wow_change": 0.0372534366
+      },
+      {
+        "week_no": 78,
+        "revenue": 81102.0199999992,
+        "baskets": 2807,
+        "active_households": 1293,
+        "avg_basket_value": 28.8927752048,
+        "revenue_wow_change": -0.1200003212
+      },
+      {
+        "week_no": 79,
+        "revenue": 82474.6199999992,
+        "baskets": 2934,
+        "active_households": 1365,
+        "avg_basket_value": 28.1099591002,
+        "revenue_wow_change": 0.0169243627
+      },
+      {
+        "week_no": 80,
+        "revenue": 83203.7399999993,
+        "baskets": 3002,
+        "active_households": 1324,
+        "avg_basket_value": 27.7161025983,
+        "revenue_wow_change": 0.0088405379
+      },
+      {
+        "week_no": 81,
+        "revenue": 90167.9599999992,
+        "baskets": 2984,
+        "active_households": 1347,
+        "avg_basket_value": 30.2171447721,
+        "revenue_wow_change": 0.0837008048
+      },
+      {
+        "week_no": 82,
+        "revenue": 86945.1199999994,
+        "baskets": 2998,
+        "active_households": 1359,
+        "avg_basket_value": 29.0010406938,
+        "revenue_wow_change": -0.0357426296
+      },
+      {
+        "week_no": 83,
+        "revenue": 83200.9199999993,
+        "baskets": 2932,
+        "active_households": 1343,
+        "avg_basket_value": 28.3768485675,
+        "revenue_wow_change": -0.0430639465
+      },
+      {
+        "week_no": 84,
+        "revenue": 85934.8699999993,
+        "baskets": 2914,
+        "active_households": 1293,
+        "avg_basket_value": 29.4903466026,
+        "revenue_wow_change": 0.0328596126
+      },
+      {
+        "week_no": 85,
+        "revenue": 97663.4599999992,
+        "baskets": 3124,
+        "active_households": 1398,
+        "avg_basket_value": 31.2623111396,
+        "revenue_wow_change": 0.136482315
+      },
+      {
+        "week_no": 86,
+        "revenue": 86445.2399999991,
+        "baskets": 2922,
+        "active_households": 1341,
+        "avg_basket_value": 29.5842710472,
+        "revenue_wow_change": -0.1148660922
+      },
+      {
+        "week_no": 87,
+        "revenue": 91391.4699999993,
+        "baskets": 2898,
+        "active_households": 1354,
+        "avg_basket_value": 31.5360489993,
+        "revenue_wow_change": 0.0572180724
+      },
+      {
+        "week_no": 88,
+        "revenue": 92469.5699999994,
+        "baskets": 3081,
+        "active_households": 1372,
+        "avg_basket_value": 30.0128432327,
+        "revenue_wow_change": 0.0117965057
+      },
+      {
+        "week_no": 89,
+        "revenue": 90544.7599999992,
+        "baskets": 2885,
+        "active_households": 1328,
+        "avg_basket_value": 31.3846655113,
+        "revenue_wow_change": -0.0208156045
+      },
+      {
+        "week_no": 90,
+        "revenue": 92939.2399999993,
+        "baskets": 2906,
+        "active_households": 1356,
+        "avg_basket_value": 31.9818444597,
+        "revenue_wow_change": 0.0264452631
+      },
+      {
+        "week_no": 91,
+        "revenue": 86922.5799999993,
+        "baskets": 2923,
+        "active_households": 1341,
+        "avg_basket_value": 29.7374546699,
+        "revenue_wow_change": -0.064737564
+      },
+      {
+        "week_no": 92,
+        "revenue": 113192.8699999993,
+        "baskets": 3353,
+        "active_households": 1428,
+        "avg_basket_value": 33.7586847599,
+        "revenue_wow_change": 0.302226303
+      },
+      {
+        "week_no": 93,
+        "revenue": 80832.1599999993,
+        "baskets": 2537,
+        "active_households": 1242,
+        "avg_basket_value": 31.8613165156,
+        "revenue_wow_change": -0.2858900035
+      },
+      {
+        "week_no": 94,
+        "revenue": 96964.2399999994,
+        "baskets": 2999,
+        "active_households": 1363,
+        "avg_basket_value": 32.3321907302,
+        "revenue_wow_change": 0.1995750206
+      },
+      {
+        "week_no": 95,
+        "revenue": 88895.0599999994,
+        "baskets": 2872,
+        "active_households": 1335,
+        "avg_basket_value": 30.9523189415,
+        "revenue_wow_change": -0.0832181018
+      },
+      {
+        "week_no": 96,
+        "revenue": 86809.9099999993,
+        "baskets": 2820,
+        "active_households": 1309,
+        "avg_basket_value": 30.7836560284,
+        "revenue_wow_change": -0.023456309
+      },
+      {
+        "week_no": 97,
+        "revenue": 88839.2599999994,
+        "baskets": 2903,
+        "active_households": 1332,
+        "avg_basket_value": 30.6025697554,
+        "revenue_wow_change": 0.0233769393
+      },
+      {
+        "week_no": 98,
+        "revenue": 98949.0299999993,
+        "baskets": 3027,
+        "active_households": 1384,
+        "avg_basket_value": 32.6888107037,
+        "revenue_wow_change": 0.113798449
+      },
+      {
+        "week_no": 99,
+        "revenue": 101363.9199999994,
+        "baskets": 2841,
+        "active_households": 1324,
+        "avg_basket_value": 35.6789581133,
+        "revenue_wow_change": 0.0244053934
+      },
+      {
+        "week_no": 100,
+        "revenue": 93063.0999999994,
+        "baskets": 2784,
+        "active_households": 1313,
+        "avg_basket_value": 33.4278376437,
+        "revenue_wow_change": -0.0818912686
+      },
+      {
+        "week_no": 101,
+        "revenue": 84407.2499999993,
+        "baskets": 2675,
+        "active_households": 1269,
+        "avg_basket_value": 31.5541121495,
+        "revenue_wow_change": -0.0930105488
+      }
+    ],
+    "top_departments": [
+      {
+        "category_level": "department",
+        "category": "GROCERY",
+        "revenue": 3785928.4199993135,
+        "revenue_share": 0.5072067572,
+        "revenue_rank": 1
+      },
+      {
+        "category_level": "department",
+        "category": "DRUG GM",
+        "revenue": 975507.8700000737,
+        "revenue_share": 0.1306903165,
+        "revenue_rank": 2
+      },
+      {
+        "category_level": "department",
+        "category": "KIOSK-GAS",
+        "revenue": 519807.0300000001,
+        "revenue_share": 0.0696393616,
+        "revenue_rank": 3
+      },
+      {
+        "category_level": "department",
+        "category": "PRODUCE",
+        "revenue": 514814.5199999909,
+        "revenue_share": 0.0689705072,
+        "revenue_rank": 4
+      },
+      {
+        "category_level": "department",
+        "category": "MEAT",
+        "revenue": 505437.4999999991,
+        "revenue_share": 0.0677142531,
+        "revenue_rank": 5
+      },
+      {
+        "category_level": "department",
+        "category": "MEAT-PCKGD",
+        "revenue": 378830.1200000012,
+        "revenue_share": 0.0507524642,
+        "revenue_rank": 6
+      },
+      {
+        "category_level": "department",
+        "category": "DELI",
+        "revenue": 240340.8900000065,
+        "revenue_share": 0.0321988453,
+        "revenue_rank": 7
+      },
+      {
+        "category_level": "department",
+        "category": "MISC SALES TRAN",
+        "revenue": 114529.2699999999,
+        "revenue_share": 0.0153436656,
+        "revenue_rank": 8
+      },
+      {
+        "category_level": "department",
+        "category": "PASTRY",
+        "revenue": 112443.3899999985,
+        "revenue_share": 0.015064217,
+        "revenue_rank": 9
+      },
+      {
+        "category_level": "department",
+        "category": "NUTRITION",
+        "revenue": 91119.6399999986,
+        "revenue_share": 0.0122074408,
+        "revenue_rank": 10
+      }
+    ],
+    "top_commodities": [
+      {
+        "category_level": "commodity",
+        "category": "COUPON/MISC ITEMS",
+        "revenue": 610526.2899999995,
+        "revenue_share": 0.0817931628,
+        "revenue_rank": 1
+      },
+      {
+        "category_level": "commodity",
+        "category": "SOFT DRINKS",
+        "revenue": 298593.5400000045,
+        "revenue_share": 0.040003044,
+        "revenue_rank": 2
+      },
+      {
+        "category_level": "commodity",
+        "category": "BEEF",
+        "revenue": 286146.5400000014,
+        "revenue_share": 0.0383354999,
+        "revenue_rank": 3
+      },
+      {
+        "category_level": "commodity",
+        "category": "FLUID MILK PRODUCTS",
+        "revenue": 190804.6100000025,
+        "revenue_share": 0.0255623923,
+        "revenue_rank": 4
+      },
+      {
+        "category_level": "commodity",
+        "category": "CHEESE",
+        "revenue": 175983.1699999996,
+        "revenue_share": 0.0235767408,
+        "revenue_rank": 5
+      },
+      {
+        "category_level": "commodity",
+        "category": "FRZN MEAT/MEAT DINNERS",
+        "revenue": 148950.7800000002,
+        "revenue_share": 0.0199551692,
+        "revenue_rank": 6
+      },
+      {
+        "category_level": "commodity",
+        "category": "BAG SNACKS",
+        "revenue": 136634.1899999971,
+        "revenue_share": 0.0183050963,
+        "revenue_rank": 7
+      },
+      {
+        "category_level": "commodity",
+        "category": "FROZEN PIZZA",
+        "revenue": 135497.9699999995,
+        "revenue_share": 0.0181528752,
+        "revenue_rank": 8
+      },
+      {
+        "category_level": "commodity",
+        "category": "BAKED BREAD/BUNS/ROLLS",
+        "revenue": 134777.5199999985,
+        "revenue_share": 0.0180563553,
+        "revenue_rank": 9
+      },
+      {
+        "category_level": "commodity",
+        "category": "BEERS/ALES",
+        "revenue": 134314.9399999993,
+        "revenue_share": 0.0179943828,
+        "revenue_rank": 10
+      }
+    ],
+    "figures": {
+      "weekly_kpi": "reports/figures/weekly_kpi.png",
+      "departments": "reports/figures/departments.png",
+      "commodities": "reports/figures/commodities.png"
+    }
+  },
+  "rfm": {
+    "households": 2493,
+    "top_customers_share": 0.2,
+    "top_customers_revenue_share": 0.5361275714865676,
+    "share_bought_in_last_week": 0.5090252707581228,
+    "segments": [
+      {
+        "segment": "Чемпионы",
+        "households": 512,
+        "household_share": 0.2053750501,
+        "avg_basket_value": 30.1310738302,
+        "avg_frequency": 223.935546875,
+        "avg_recency_weeks": 0.0,
+        "revenue": 3454678.270000002,
+        "revenue_share": 0.462828656
+      },
+      {
+        "segment": "Лояльные",
+        "households": 652,
+        "household_share": 0.2615322904,
+        "avg_basket_value": 27.9322905115,
+        "avg_frequency": 117.5628834356,
+        "avg_recency_weeks": 0.2239263804,
+        "revenue": 2141038.0000000005,
+        "revenue_share": 0.2868382126
+      },
+      {
+        "segment": "Перспективные",
+        "households": 178,
+        "household_share": 0.0713999198,
+        "avg_basket_value": 34.6716429855,
+        "avg_frequency": 34.3988764045,
+        "avg_recency_weeks": 0.0,
+        "revenue": 212294.47,
+        "revenue_share": 0.0284414225
+      },
+      {
+        "segment": "Под угрозой ухода",
+        "households": 331,
+        "household_share": 0.1327717609,
+        "avg_basket_value": 27.6797595988,
+        "avg_frequency": 104.8096676737,
+        "avg_recency_weeks": 4.2809667674,
+        "revenue": 960266.2200000002,
+        "revenue_share": 0.1286483688
+      },
+      {
+        "segment": "Спящие",
+        "households": 667,
+        "household_share": 0.2675491376,
+        "avg_basket_value": 31.6245881868,
+        "avg_frequency": 25.4842578711,
+        "avg_recency_weeks": 9.4017991004,
+        "revenue": 537554.75,
+        "revenue_share": 0.0720170514
+      },
+      {
+        "segment": "Середняки",
+        "households": 153,
+        "household_share": 0.0613718412,
+        "avg_basket_value": 31.3429792285,
+        "avg_frequency": 33.0392156863,
+        "avg_recency_weeks": 0.522875817,
+        "revenue": 158438.76,
+        "revenue_share": 0.0212262887
+      }
+    ],
+    "figures": {
+      "rfm_segments": "reports/figures/rfm_segments.png"
+    }
+  },
+  "cohorts": {
+    "period_weeks": 4,
+    "min_cohort_size": 50,
+    "cohorts_kept": 5,
+    "households_in_kept_cohorts": 2488,
+    "households_in_dropped_cohorts": 12,
+    "cohort_sizes": {
+      "нед. 1-4": 447,
+      "нед. 5-8": 521,
+      "нед. 9-12": 616,
+      "нед. 13-16": 681,
+      "нед. 17-20": 223
+    },
+    "average_retention_by_period": {
+      "1": 0.8014469453376206,
+      "3": 0.7905948553054662,
+      "13": 0.8062700964630225
+    },
+    "retention_plateau_min": 0.7789389067524116,
+    "retention_plateau_max": 0.8232662192393736,
+    "retention_matrix": {
+      "нед. 1-4": [
+        1.0,
+        0.796420581655481,
+        0.785234899328859,
+        0.8098434004474273,
+        0.7807606263982103,
+        0.796420581655481,
+        0.8031319910514542,
+        0.8076062639821029,
+        0.7986577181208053,
+        0.7986577181208053,
+        0.796420581655481,
+        0.8120805369127517,
+        0.8120805369127517,
+        0.8120805369127517,
+        0.796420581655481,
+        0.7695749440715883,
+        0.8277404921700223,
+        0.8008948545861297,
+        0.8053691275167785,
+        0.8165548098434005,
+        0.8008948545861297,
+        0.8299776286353467,
+        0.825503355704698,
+        0.8187919463087249,
+        0.8232662192393736
+      ],
+      "нед. 5-8": [
+        1.0,
+        0.8080614203454894,
+        0.8042226487523992,
+        0.783109404990403,
+        0.7907869481765835,
+        0.781190019193858,
+        0.7946257197696737,
+        0.7869481765834933,
+        0.7965451055662188,
+        0.783109404990403,
+        0.7907869481765835,
+        0.8061420345489443,
+        0.7869481765834933,
+        0.7946257197696737,
+        0.817658349328215,
+        0.8099808061420346,
+        0.8291746641074856,
+        0.7927063339731286,
+        0.8042226487523992,
+        0.8195777351247601,
+        0.8272552783109405,
+        0.817658349328215,
+        0.800383877159309,
+        0.783109404990403,
+        null
+      ],
+      "нед. 9-12": [
+        1.0,
+        0.810064935064935,
+        0.7873376623376623,
+        0.7840909090909091,
+        0.7792207792207793,
+        0.7873376623376623,
+        0.8003246753246753,
+        0.7792207792207793,
+        0.775974025974026,
+        0.7727272727272727,
+        0.7792207792207793,
+        0.7987012987012987,
+        0.797077922077922,
+        0.8116883116883117,
+        0.8133116883116883,
+        0.8181818181818182,
+        0.8214285714285714,
+        0.7954545454545454,
+        0.8214285714285714,
+        0.8165584415584416,
+        0.801948051948052,
+        0.788961038961039,
+        0.814935064935065,
+        null,
+        null
+      ],
+      "нед. 13-16": [
+        1.0,
+        0.7988252569750367,
+        0.8149779735682819,
+        0.7900146842878121,
+        0.7767988252569751,
+        0.8032305433186491,
+        0.7870778267254038,
+        0.8164464023494861,
+        0.7782672540381792,
+        0.762114537444934,
+        0.7856093979441997,
+        0.8135095447870778,
+        0.8105726872246696,
+        0.8179148311306902,
+        0.8061674008810573,
+        0.7958883994126285,
+        0.8105726872246696,
+        0.8120411160058737,
+        0.8267254038179148,
+        0.8120411160058737,
+        0.8296622613803231,
+        0.8237885462555066,
+        null,
+        null,
+        null
+      ],
+      "нед. 17-20": [
+        1.0,
+        0.7802690582959642,
+        0.7668161434977578,
+        0.7892376681614349,
+        0.8116591928251121,
+        0.8071748878923767,
+        0.7937219730941704,
+        0.7802690582959642,
+        0.7982062780269058,
+        0.7982062780269058,
+        0.7713004484304933,
+        0.8251121076233184,
+        0.820627802690583,
+        0.7713004484304933,
+        0.757847533632287,
+        0.7488789237668162,
+        0.7937219730941704,
+        0.7892376681614349,
+        0.7802690582959642,
+        0.7892376681614349,
+        0.820627802690583,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "figures": {
+      "cohort_heatmap": "reports/figures/cohort_heatmap.png",
+      "cohort_lines": "reports/figures/cohort_lines.png"
+    }
+  },
+  "churning_loyal": {
+    "mid_week": 58,
+    "recent_weeks": 12,
+    "loyal_top_share": 0.2,
+    "activity_drop": 0.5,
+    "churning_households": 70,
+    "loyal_households": 491,
+    "churning_baseline_revenue_share": 0.0647014764870705,
+    "churning_recent_revenue_share": 0.020955433010382465,
+    "churning_window_revenue_share": 0.05817744168640771,
+    "churning_basket_drop": 0.746824156447864,
+    "groups": [
+      {
+        "household_group": "churning_loyal",
+        "households": 70,
+        "revenue": 434252.1600000002,
+        "baseline_revenue": 410925.0200000002,
+        "recent_revenue": 23327.14,
+        "baseline_baskets": 38.538996139,
+        "recent_baskets": 9.7571428571,
+        "household_share": 0.0280786201,
+        "revenue_share": 0.0581774417,
+        "baseline_revenue_share": 0.0647014765,
+        "recent_revenue_share": 0.020955433,
+        "avg_basket_value": 25.0737432877
+      },
+      {
+        "household_group": "other",
+        "households": 2002,
+        "revenue": 3610117.5200000005,
+        "baseline_revenue": 3021100.9800000004,
+        "recent_revenue": 589016.54,
+        "baseline_baskets": 9.8837918838,
+        "recent_baskets": 10.452047952,
+        "household_share": 0.8030485359,
+        "revenue_share": 0.4836530957,
+        "baseline_revenue_share": 0.4756821427,
+        "recent_revenue_share": 0.5291303026,
+        "avg_basket_value": 25.2549372844
+      },
+      {
+        "household_group": "stable_loyal",
+        "households": 421,
+        "revenue": 3419900.790000002,
+        "baseline_revenue": 2919065.8500000015,
+        "recent_revenue": 500834.94,
+        "baseline_baskets": 31.1520831996,
+        "recent_baskets": 30.9548693587,
+        "household_share": 0.168872844,
+        "revenue_share": 0.4581694626,
+        "baseline_revenue_share": 0.4596163808,
+        "recent_revenue_share": 0.4499142644,
+        "avg_basket_value": 36.4175660221
+      }
+    ],
+    "basket_value_comparison": {
+      "churning_median": 28.35800136798906,
+      "stable_median": 40.06865771812083,
+      "p_value": 1.5481268879111016e-05
+    },
+    "department_mix": [
+      {
+        "department": "GROCERY",
+        "churning_share": 0.5114937441,
+        "stable_share": 0.4919832351,
+        "difference_pp": 1.9510508993,
+        "p_value": 0.0893300671,
+        "significant": false
+      },
+      {
+        "department": "DRUG GM",
+        "churning_share": 0.1376087565,
+        "stable_share": 0.1304905484,
+        "difference_pp": 0.7118208018,
+        "p_value": 0.2832531281,
+        "significant": false
+      },
+      {
+        "department": "KIOSK-GAS",
+        "churning_share": 0.0794646442,
+        "stable_share": 0.0866801129,
+        "difference_pp": -0.721546872,
+        "p_value": 0.993059607,
+        "significant": false
+      },
+      {
+        "department": "PRODUCE",
+        "churning_share": 0.0574022596,
+        "stable_share": 0.0708712874,
+        "difference_pp": -1.3469027785,
+        "p_value": 0.001572842,
+        "significant": true
+      },
+      {
+        "department": "MEAT",
+        "churning_share": 0.0733276402,
+        "stable_share": 0.0637438052,
+        "difference_pp": 0.958383498,
+        "p_value": 0.1084412113,
+        "significant": false
+      },
+      {
+        "department": "MEAT-PCKGD",
+        "churning_share": 0.0573304535,
+        "stable_share": 0.0470463206,
+        "difference_pp": 1.0284132944,
+        "p_value": 0.0022274812,
+        "significant": true
+      },
+      {
+        "department": "DELI",
+        "churning_share": 0.031149519,
+        "stable_share": 0.0335916767,
+        "difference_pp": -0.2442157743,
+        "p_value": 0.1131220602,
+        "significant": false
+      },
+      {
+        "department": "MISC SALES TRAN",
+        "churning_share": 0.0061982362,
+        "stable_share": 0.0179040272,
+        "difference_pp": -1.1705791066,
+        "p_value": 0.8243778759,
+        "significant": false
+      }
+    ],
+    "demographic_tests": [
+      {
+        "attribute": "classification_1",
+        "churning_with_demographics": 30,
+        "stable_with_demographics": 303,
+        "p_value": 0.0975520094,
+        "min_expected_count": 1.3513513514,
+        "reliable": false,
+        "significant": false
+      },
+      {
+        "attribute": "classification_2",
+        "churning_with_demographics": 30,
+        "stable_with_demographics": 303,
+        "p_value": 0.3286093753,
+        "min_expected_count": 3.8738738739,
+        "reliable": false,
+        "significant": false
+      },
+      {
+        "attribute": "classification_3",
+        "churning_with_demographics": 30,
+        "stable_with_demographics": 303,
+        "p_value": 0.000474942,
+        "min_expected_count": 0.1801801802,
+        "reliable": false,
+        "significant": false
+      },
+      {
+        "attribute": "classification_4",
+        "churning_with_demographics": 30,
+        "stable_with_demographics": 303,
+        "p_value": 0.482959308,
+        "min_expected_count": 2.2522522523,
+        "reliable": false,
+        "significant": false
+      },
+      {
+        "attribute": "classification_5",
+        "churning_with_demographics": 30,
+        "stable_with_demographics": 303,
+        "p_value": 0.4332782578,
+        "min_expected_count": 1.8918918919,
+        "reliable": false,
+        "significant": false
+      },
+      {
+        "attribute": "homeowner_desc",
+        "churning_with_demographics": 30,
+        "stable_with_demographics": 303,
+        "p_value": 0.1995387618,
+        "min_expected_count": 0.1801801802,
+        "reliable": false,
+        "significant": false
+      },
+      {
+        "attribute": "kid_category_desc",
+        "churning_with_demographics": 30,
+        "stable_with_demographics": 303,
+        "p_value": 0.5391606425,
+        "min_expected_count": 2.7027027027,
+        "reliable": false,
+        "significant": false
+      }
+    ],
+    "figures": {
+      "loyal_activity": "reports/figures/loyal_activity.png",
+      "churning_departments": "reports/figures/churning_departments.png"
+    }
+  },
+  "promo": {
+    "pre_weeks": 4,
+    "treated_min_store_share": 0.5,
+    "confidence_level": 0.95,
+    "estimates": {
+      "units": {
+        "outcome": "units",
+        "coefficient": 0.6951638965498483,
+        "ci_low": 0.6687236223522083,
+        "ci_high": 0.7216041707474884,
+        "p_value": 0.0,
+        "effect_pct": 100.403750185866,
+        "effect_pct_ci_low": 95.1744566987339,
+        "effect_pct_ci_high": 105.77315171191415,
+        "observations": 137780,
+        "events": 3056,
+        "treated_units": 8315,
+        "control_units": 19241,
+        "clusters": 6687
+      },
+      "revenue": {
+        "outcome": "revenue",
+        "coefficient": 0.6107536514563139,
+        "ci_low": 0.5828370452123444,
+        "ci_high": 0.6386702577002834,
+        "p_value": 0.0,
+        "effect_pct": 84.18189653906958,
+        "effect_pct_ci_low": 79.11126970871149,
+        "effect_pct_ci_high": 89.39607244087674,
+        "observations": 137780,
+        "events": 3056,
+        "treated_units": 8315,
+        "control_units": 19241,
+        "clusters": 6687
+      },
+      "units_display_control": {
+        "outcome": "units",
+        "coefficient": 0.3949408363684563,
+        "ci_low": 0.368822621268046,
+        "ci_high": 0.4210590514688666,
+        "p_value": 1.5514785261731337e-181,
+        "effect_pct": 48.42963719594431,
+        "effect_pct_ci_low": 44.603108576464244,
+        "effect_pct_ci_high": 52.357424504949414,
+        "observations": 137780,
+        "events": 3056,
+        "treated_units": 8315,
+        "control_units": 19241,
+        "clusters": 6687
+      },
+      "cannibalization_units": {
+        "outcome": "units",
+        "coefficient": 0.02150497535711477,
+        "ci_low": -0.003812432600653313,
+        "ci_high": 0.04682238331488285,
+        "p_value": 0.09592986746456868,
+        "effect_pct": 2.173787383553589,
+        "effect_pct_ci_low": -0.3805174506081145,
+        "effect_pct_ci_high": 4.793586165473824,
+        "observations": 65560,
+        "events": 988,
+        "treated_units": 5196,
+        "control_units": 7916,
+        "clusters": 4827
+      }
+    },
+    "event_study_units": [
+      {
+        "rel_week": -4,
+        "coefficient": -0.0210989009,
+        "ci_low": -0.0379845253,
+        "ci_high": -0.0042132766,
+        "p_value": 0.0143327449
+      },
+      {
+        "rel_week": -3,
+        "coefficient": -0.0319310994,
+        "ci_low": -0.0486136032,
+        "ci_high": -0.0152485956,
+        "p_value": 0.0001768137
+      },
+      {
+        "rel_week": -2,
+        "coefficient": -0.0458288647,
+        "ci_low": -0.0619726941,
+        "ci_high": -0.0296850352,
+        "p_value": 2.72e-08
+      },
+      {
+        "rel_week": -1,
+        "coefficient": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": null
+      },
+      {
+        "rel_week": 0,
+        "coefficient": 0.6704491803,
+        "ci_low": 0.6432548768,
+        "ci_high": 0.6976434838,
+        "p_value": 0.0
+      }
+    ],
+    "pretrend_joint_p_value": 4.0259787417683394e-07,
+    "max_pre_period_gap_pct": 4.689523487123296,
+    "cannibalization_event_study_units": [
+      {
+        "rel_week": -4,
+        "coefficient": -0.0062269684,
+        "ci_low": -0.0293128434,
+        "ci_high": 0.0168589066,
+        "p_value": 0.5969719776
+      },
+      {
+        "rel_week": -3,
+        "coefficient": -0.0054038891,
+        "ci_low": -0.0283234374,
+        "ci_high": 0.0175156591,
+        "p_value": 0.6439377841
+      },
+      {
+        "rel_week": -2,
+        "coefficient": -0.004837284,
+        "ci_low": -0.0275317142,
+        "ci_high": 0.0178571462,
+        "p_value": 0.6760620701
+      },
+      {
+        "rel_week": -1,
+        "coefficient": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": null
+      },
+      {
+        "rel_week": 0,
+        "coefficient": 0.01738794,
+        "ci_low": -0.0112349563,
+        "ci_high": 0.0460108362,
+        "p_value": 0.2337338826
+      }
+    ],
+    "cannibalization_pretrend_joint_p_value": 0.9505832960968598,
+    "concurrent_display_share": {
+      "treated": 0.8965724594107035,
+      "control": 0.44805363546593213
+    },
+    "figures": {
+      "promo_trends": "reports/figures/promo_trends.png",
+      "promo_effects": "reports/figures/promo_effects.png"
+    }
+  }
+}
